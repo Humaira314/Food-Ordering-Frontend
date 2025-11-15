@@ -1,11 +1,5 @@
-// Prefer current origin when served through Flask; fall back to localhost when opened from disk.
-const API_BASE_URL = (() => {
-   const { origin } = window.location;
-   if (origin && origin.startsWith("http")) {
-      return `${origin.replace(/\/$/, "")}/api`;
-   }
-   return "http://127.0.0.1:5000/api";
-})();
+// API base URL - points to Render backend
+const API_BASE_URL = "https://food-ordering-backend-b3k6.onrender.com/api";
 
 document.addEventListener("DOMContentLoaded", () => {
    const form = document.getElementById("loginForm");

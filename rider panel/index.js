@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://127.0.0.1:5000/api";
+const API_BASE_URL = "https://food-ordering-backend-b3k6.onrender.com/api";
 const RIDER_TOKEN_MAP = { rider1: "rider_token" };
 
 function parseItems(rawItems) {
