@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Menu - Food Ordering System</title>
+      <link rel="stylesheet" href="css/menu.css" />
+   </head>
+   <body>
+      <div class="header">
+         <h1>🍽 Our Menu</h1>
+         <div class="nav-buttons">
+            <a href="index.html" class="back-btn">← Back to Home</a>
+            <a href="cart.html" class="cart-btn">🛒 View Cart (0)</a>
+         </div>
+      </div>
+
+      <div class="tabs">
+         <button class="tab-btn active" onclick="openTab('appetizers', this)">
+            Appetizers
+         </button>
+         <button class="tab-btn" onclick="openTab('main-course', this)">
+            Main Course
+         </button>
+         <button class="tab-btn" onclick="openTab('desserts', this)">Desserts</button>
+         <button class="tab-btn" onclick="openTab('drinks', this)">Drinks</button>
+      </div>
+
+      <div id="appetizers" class="tab-content active">
+         <h2 class="section-title">Appetizers</h2>
+         <div class="menu-grid" data-category="appetizers">
+            <p class="loading-text">Loading appetizers...</p>
+         </div>
+      </div>
+
+      <div id="main-course" class="tab-content">
+         <h2 class="section-title">Main Course</h2>
+         <div class="menu-grid" data-category="main-course">
+            <p class="loading-text">Loading main courses...</p>
+         </div>
+      </div>
+
+      <div id="desserts" class="tab-content">
+         <h2 class="section-title">Desserts</h2>
+         <div class="menu-grid" data-category="desserts">
+            <p class="loading-text">Loading desserts...</p>
+         </div>
+      </div>
+
+      <div id="drinks" class="tab-content">
+         <h2 class="section-title">Drinks</h2>
+         <div class="menu-grid" data-category="drinks">
+            <p class="loading-text">Loading drinks...</p>
+         </div>
+      </div>
+
+      <script src="JS/menu.js"></script>
+   </body>
+</html>

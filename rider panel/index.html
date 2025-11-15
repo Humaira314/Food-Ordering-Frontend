@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Rider Panel - Food Ordering System</title>
+
+      <link rel="stylesheet" href="/rider/index.css" />
+   </head>
+   <body>
+      <div class="header">
+         <h1>🚴 Rider Panel</h1>
+      </div>
+
+      <div class="rider-select">
+         <label for="rider-name">Select Rider:</label>
+         <select id="rider-name" onchange="loadAssignedOrders()">
+            <option value="">Choose Rider</option>
+            <option value="rider1">rider1</option>
+         </select>
+      </div>
+
+      <div id="orders-container">
+         <!-- Assigned orders will be listed here -->
+      </div>
+
+      <script src="/rider/index.js"></script>
+   </body>
+</html>
